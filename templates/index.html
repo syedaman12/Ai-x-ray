@@ -1,0 +1,103 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Upload an Image</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-image: linear-gradient(to bottom right, #eb7b59, #f80e0e);
+                background-size: cover; /* fills the screen */
+                background-position: center; /* center the image */
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            header {
+                background-color: #333;
+                color: rgb(255, 255, 255);
+                padding: 20px;
+                text-align: center;
+                font-size: 24px;
+            }
+            footer {
+                background-color: #333;
+                color: white;
+                padding: 15px;
+                text-align: center;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+            footer a {
+                color: #ffcc00;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+            }
+            footer a:hover {
+                text-decoration: underline;
+            }
+            .container {
+                max-width: 800px;
+                margin: 40px auto;
+                background-color: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+                color: #333;
+                text-align: center;
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            .upload-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            input[type="file"] {
+                margin-bottom: 20px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                background-color: #f8f8f8;
+                font-size: 16px;
+            }
+            input[type="submit"] {
+                padding: 15px 30px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 18px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+            footer p {
+                margin: 5px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            AI-Powered Chest X-Ray Analysis: Normal or Abnormal? - PyResearch
+        </header>
+
+        <div class="container">
+            <h1>Upload an Image Chest X-Ray AI Detection: Normal vs Abnormal</h1>
+            <form class="upload-form" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" accept="image/*" required>
+                <input type="submit" value="Upload Image">
+            </form>
+        </div>
+
+        
+    </body>
+    </html>
